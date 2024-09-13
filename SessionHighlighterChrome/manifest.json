@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "Burp Session Highlighter",
+	"description": "Highlight Requests in Burp History based on the current session",
+	"version": "1.0",
+	"host_permissions": ["<all_urls>"],
+	"permissions": [
+		"storage",
+		"declarativeNetRequest"
+	],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"128": "icons/undefined_128x128.png"
+		}
+	},
+	"background": {
+		"service_worker": "background.js",
+		"type": "module"
+	}
+}
